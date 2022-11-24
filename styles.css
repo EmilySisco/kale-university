@@ -128,7 +128,9 @@ header nav {
 header nav.secondary a {
     font-size: 0.875rem;
     display:block;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
     line-height: 1.21428571;
     font-weight: 600;
     letter-spacing: 0.55px;
@@ -139,11 +141,6 @@ header nav.secondary a {
 
 .list {
     color: var(--secondary-color);
-}
-
-header nav.secondary a:hover {
-    border-bottom: 0.25px solid #286dc0;
-    padding-bottom: none;
 }
 
 header nav .secondary .go {
@@ -329,6 +326,7 @@ hr {
 
 }
 
+
 .one {
     grid-area: one;
     background-color:#286dc0;
@@ -420,8 +418,30 @@ hr {
     font-family: 'Gill Sans','Gill Sans MT',Calibri,Arial,sans-serif;
 }
 
+.one h2:hover {
+    background-color: #00356b;
+    border: 0.1px solid #00356b;
+}
+
+/* .one h2:hover .fa-rotate-right {
+
+    -webkit-animation: infinite-spinning 1s ease-out 0s infinite normal;
+    animation: infinite-spinning 1s ease-out 0s infinite normal;
+}
+
+@keyframes infinite-spinning {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  } */
+
 .fa-rotate-right {
     padding-right: 10px;
+
 }
 
 .closer-look .text {
@@ -478,6 +498,10 @@ hr {
     padding-top: 7%;
 }
 
+.two:hover p , .two:hover h1 {
+    transform: translateY(-10px);
+}
+
 .three {
     grid-area: three;
     /* width: 100%; */
@@ -500,6 +524,10 @@ hr {
 .three p {
     padding-left: 10%;
     padding-top: 7%;
+}
+
+.three:hover p , .three:hover h1 {
+    transform: translateY(-10px);
 }
 
 .four {
@@ -528,6 +556,9 @@ hr {
 
 }
 
+.four:hover p , .four:hover h1 {
+    transform: translateY(-10px);
+}
 
 .five {
     /* grid-area: five; */
@@ -565,6 +596,7 @@ hr {
  .five .ace {
     margin-left: 25%;
     margin-top: 2%;
+    width: 6%;
  }
 
  .five .head-text {
@@ -589,6 +621,8 @@ hr {
     padding-bottom: 8%;
  }
 
+
+
 .five .explore {
     margin-left: 25%;
     margin-bottom: 50%;
@@ -601,6 +635,11 @@ hr {
     width: 200px;
     text-align: center;
     padding: 10px;
+}
+
+.five .explore:hover {
+    border: 1px solid #00356b;
+    background-color: #00356b;
 }
 
 .six {
@@ -624,6 +663,11 @@ hr {
     font-family: 'Gill Sans','Gill Sans MT',Calibri,Arial,sans-serif;
     padding-left: 10%;
 
+}
+
+.six .explore:hover {
+    border: 1px solid #286dc0;
+    background-color: #286dc0;
 }
 
 .six .academics {
@@ -695,6 +739,10 @@ hr {
     padding-top: 7%;
 }
 
+.seven:hover p , .seven:hover h1 {
+    transform: translateY(-10px);
+}
+
 .eight {
     grid-area: eight;
     width: 100%;
@@ -720,6 +768,10 @@ hr {
     padding-top: 7%;
 }
 
+.eight:hover p , .eight:hover h1 {
+    transform: translateY(-10px);
+}
+
 .nine {
     grid-area: nine;
     width: 100%;
@@ -739,6 +791,10 @@ hr {
 .nine p {
     padding-left: 10%;
     padding-top: 7%;
+}
+
+.nine:hover p , .nine:hover h1 {
+    transform: translateY(-10px);
 }
 
 .ten {
@@ -761,6 +817,10 @@ hr {
 .ten p {
     padding-left: 10%;
     padding-top: 7%;
+}
+
+.ten:hover p , .ten:hover h1 {
+    transform: translateY(-10px);
 }
 
 .footer {
@@ -794,7 +854,7 @@ hr {
 
 .social_properties {
     grid-area: social;
-    padding-top: 12%;
+    padding-top: 15%;
     font-family:'Times New Roman', Times, serif ;
 }
 
